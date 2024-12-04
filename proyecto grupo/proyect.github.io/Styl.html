@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Styll Bernolly</h1>
+            <input type="text" placeholder="Buscar productos..." class="search-bar">
+        </div> 
+
+        <div class="somos">
+            <a  href="quienes somos.html" style="color: white;">¿Quienes Somos? </a>
+            
+        </div>
+       
+    </header>
+
+    <h1> <center>Camisas Oversize</center></h1>
+    
+    <div class="videopub">
+<center>
+
+    <video autoplay muted loop width="970px" height="auto"   >
+        <source src="combina koaj.mp4" type="video/mp4" >
+        <source src="combina koaj.mp4" type="video/webm">
+        <source src="combina koaj.mp4" type="video/ogg">
+        Tu navegador no soporta la etiqueta <code>video</code>.
+
+        
+    </video>
+</center>
+       </div>
+  
+    <main>
+        <section class="products">
+            <button class="arrow left">&lt;</button>
+            <div class="products-wrapper">
+                <div class="product1">
+                    <img src="Camisa negra Oversize.webp" alt="Camiseta negra" height="150px">
+                    <h3>Oversize Basica Negra</h3> 
+                    <p>$49,999 COP</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                <div class="product2">
+                    <img src="Camisa verde oversize.webp" alt="Camiseta verde" height="150px">
+                    <h3>Oversize Basica Verde </h3>
+                    <p>$49,999 COP</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                <div class="product3">
+                    <img src="camisa beig oversize.webp" alt="Camiseta beig" height="150px">
+                    <h3>Oversize Basica beig </h3>
+                    <p>$49,999 COP</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                <div class="product4">
+                    <img src="camisa Blanca Oversize.webp" alt="Camiseta blanca" height="150px">
+                    <h3>Oversize Basica blanca </h3>
+                    <p>$49,999 COP</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+                <div class="product5">
+                    <img src="camisa rosa oversize.jpeg" alt="Camiseta rosa" height="150px">
+                    <h3>Oversize Basica rosa </h3>
+                    <p>$49,999 COP</p>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+               
+            <button class="arrow right">&gt;</button>
+        </section>
+        <section class="payment-methods">
+            <h2>Métodos de pago</h2>
+             <img src="Pagos.png" alt="metodos de pago " height="100px"> 
+            <ul>
+                <li>Tarjetas de crédito</li>
+                <li>Tarjetas de débito</li>
+                <li>Pagos electrónicos (Nequi, Daviplata, etc.)</li>
+            </ul>
+            <button>Pagar ahora</button>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h3>Contacto y Redes Sociales</h3>
+            <p>Ubicación: Bogotá, Colombia</p>
+            <p>Teléfono: +57 300 123 4567</p>
+            <p>Email: StyllBernolly@gmail.com</p>
+            <div class="social-media">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const productsWrapper = document.querySelector('.products-wrapper');
+
+
+
+        const products = document.querySelectorAll('.product');
+        const leftArrow = document.querySelector('.arrow.left');
+        const rightArrow = document.querySelector('.arrow.right');
+
+        let index = 0;
+
+        function updateSlider() {
+            const offset = -index * products[0].offsetWidth;
+            productsWrapper.style.transform = `translateX(${offset}px)`;
+        }
+
+        leftArrow.addEventListener('click', () => {
+            index = Math.max(index - 1, 0);
+            updateSlider();
+        });
+
+        rightArrow.addEventListener('click', () => {
+            index = Math.min(index + 1, products.length - 1);
+            updateSlider();
+        });
+    </script>
+
+  
+  <button class="float-button">
+    <img src="asesor.png" alt="asesor" />
+</button>
+
+</script>
+<a href="https://wa.me/3145667898?text=Hola,%20necesito%20información" target="_blank" class="whatsapp-button">
+  <img src="whatsapp_logo-removebg-preview.png" alt="WhatsApp" 
+  height="10px"/>
+</a>
+
+</script>
+<a href="https://www.instagram.com/accounts/login/" target="_blank" class="instagram">
+<img src="INSTAGRAM.png" alt="Instagram" 
+height="10px"/>
+</a>
+
+</script>
+<a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="facebook">
+<img src="facebook-remove.png" alt="facebook" 
+height="20px"/>
+</a>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,236 @@
+
+:root {
+    --vinotinto: #800020;
+    --gris: #f2f2f2;
+    --blanco: #ffffff;
+    --negro: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--negro);
+    background-color: var(--gris);
+}
+
+header {
+    background-color: var(--vinotinto);
+    color: var(--blanco);
+    padding: 1rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+main {
+    padding: 10rem;
+}
+
+.products {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.products-wrapper {
+    display: flex;
+    transition: transform 10s ease;
+}
+
+.product {
+    border: 1px solid var(--negro);
+    padding: 1rem;
+    text-align: center;
+    min-width: 200px;
+    margin-right: 1rem;
+    background-color: var(--blanco);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.add-to-cart {
+    background-color: var(--vinotinto);
+    color: var(--blanco);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #a83248;
+}
+
+.arrow {
+    background-color: var(--vinotinto);
+    color: var(--blanco);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+
+.payment-methods {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.payment-methods ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.payment-methods li {
+    margin: 0.5rem 0;
+}
+
+.payment-methods button {
+    background-color: var(--vinotinto);
+    color: var(--blanco);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.payment-methods button:hover {
+    background-color: #d36277;
+}
+
+footer {
+    background-color: var(--vinotinto);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--gris);
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+.float-button {
+    position: fixed;   
+    bottom: 400px;      
+    right: 40px;       
+    background-color: #88101a; 
+    border: none;      
+    border-radius: 50%; 
+    padding: 15px;     
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;  
+    z-index: 1000;    
+
+}
+
+.float-button img {
+    width: 100px; 
+    height: auto; 
+}
+
+
+.float-button:hover {
+    background-color: #a0aca1;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 40px; 
+    left: 20px; 
+    background-color: #08f880; 
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+    margin-bottom: 60px;
+}
+
+
+
+.whatsapp-button img {
+    width: 20px; 
+    height: 20px;
+    object-fit: cover;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; 
+}
+
+
+.instagram {
+    position: fixed;
+    bottom: 20px; 
+    left: 20px;  
+    background-color: #e9cae1;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  
+}
+
+.instagram img {
+    width: 20px; 
+    height: 20px;
+    object-fit: cover;
+}
+
+.instagram-button:hover {
+    background-color: #128C7E; 
+}
+
+
+
+.facebook {
+    position: fixed;
+    bottom: 20px; 
+    left: 20px;  
+    background-color: #5e6ce9;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 140px;
+  
+}
+
+.facebook img {
+    width: 20px; 
+    height: 20px;
+    object-fit: cover;
+}
+
+.facebook-button:hover {
+    background-color: #bbf8f1; 
+
+}

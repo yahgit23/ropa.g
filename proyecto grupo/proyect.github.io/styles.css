@@ -234,3 +234,35 @@ footer a:hover {
     background-color: #bbf8f1; 
 
 }
+
+
+
+.cart-button {
+    position: absolute; /* Esto permite moverlo */
+    top: 10px;  /* 10px desde el borde superior */
+    margin-top: 20px;
+    right: 250px; /* 10px desde el borde derecho */
+    background-color: var(--morado);
+    color: var(--azul);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(101, 253, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-button:hover {
+    background-color: #32e90e;
+}
+
+.cart-button .cart-icon {
+    font-size: 1.0rem;  /* Tamaño del ícono */
+}
+
+main {
+    padding: 10rem;
+}
